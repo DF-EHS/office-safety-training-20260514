@@ -380,16 +380,15 @@ tr:nth-child(even) td { background: #f9fafb; }
 #ctrl {
   position: fixed;
   bottom: 1.2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.55rem;
   background: rgba(17, 24, 39, 0.85);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255,255,255,0.12);
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
   color: white;
   z-index: 100;
 }
@@ -397,15 +396,15 @@ tr:nth-child(even) td { background: #f9fafb; }
   background: none;
   border: 1px solid rgba(255,255,255,0.3);
   color: white;
-  padding: 0.3rem 0.85rem;
-  border-radius: 14px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-family: inherit;
   transition: background 0.15s;
 }
 #ctrl button:hover { background: rgba(255,255,255,0.18); }
-#ctr-num { font-size: 0.9rem; opacity: 0.85; min-width: 4.5rem; text-align: center; }
+#ctr-num { font-size: 0.78rem; opacity: 0.85; min-width: 3.8rem; text-align: center; }
 
 #back-btn {
   position: fixed;
@@ -574,10 +573,10 @@ tr:nth-child(even) td { background: #f9fafb; }
           <tr><td style="text-align:center;"><strong style="color:var(--u1); font-size:1.2rem;">一</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(2)">作業安全衛生有關法規概要</button></td></tr>
           <tr><td style="text-align:center;"><strong style="color:var(--u2); font-size:1.2rem;">二</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(4)">職業安全衛生概念及安全衛生工作守則</button></td></tr>
           <tr><td style="text-align:center;"><strong style="color:var(--u3); font-size:1.2rem;">三</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(6)">作業前、中、後之自動檢查</button></td></tr>
-          <tr><td style="text-align:center;"><strong style="color:var(--u4); font-size:1.2rem;">四</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(11)">標準作業程序</button></td></tr>
-          <tr><td style="text-align:center;"><strong style="color:var(--u5); font-size:1.2rem;">五</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(23)">緊急事故應變處理</button></td></tr>
-          <tr><td style="text-align:center;"><strong style="color:var(--u6); font-size:1.2rem;">六</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(27)">其他與勞工作業有關之安全衛生知識</button></td></tr>
-          <tr><td style="text-align:center;"><strong style="color:var(--us); font-size:1.2rem;">七</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(37)">補充說明</button></td></tr>
+          <tr><td style="text-align:center;"><strong style="color:var(--u4); font-size:1.2rem;">四</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(12)">標準作業程序</button></td></tr>
+          <tr><td style="text-align:center;"><strong style="color:var(--u5); font-size:1.2rem;">五</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(24)">緊急事故應變處理</button></td></tr>
+          <tr><td style="text-align:center;"><strong style="color:var(--u6); font-size:1.2rem;">六</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(28)">其他與勞工作業有關之安全衛生知識</button></td></tr>
+          <tr><td style="text-align:center;"><strong style="color:var(--us); font-size:1.2rem;">七</strong></td><td><button class="toc-btn" onclick="event.stopPropagation(); show(38)">補充說明</button></td></tr>
         </tbody>
       </table>
     </div>
@@ -739,7 +738,23 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 8 · 6S 總覽
+     SLIDE 8 · 補充 職災統計
+══════════════════════════════════ -->
+<section class="slide slide-content">
+  <div class="accent" style="background:var(--us);"></div>
+  <div class="slide-header">
+    <span class="unit-badge" style="background:var(--us);">補充</span>
+    <h2>職災統計</h2>
+  </div>
+  <div class="slide-body" style="justify-content:center; align-items:center;">
+    <div style="text-align:center;">
+      <img src="img/31職災統計.png" alt="職災統計" style="max-width:100%; max-height:32rem; object-fit:contain; border-radius:0.4rem;">
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     SLIDE 9 · 6S 總覽
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u5);"></div>
@@ -779,7 +794,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 9 · 整理 & 整頓
+     SLIDE 10 · 整理 & 整頓
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u5);"></div>
@@ -825,7 +840,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 10 · 清掃、清潔、素養、安全
+     SLIDE 11 · 清掃、清潔、素養、安全
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u5);"></div>
@@ -865,7 +880,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 11 · 自動檢查實際案例
+     SLIDE 12 · 自動檢查實際案例
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u5);"></div>
@@ -896,7 +911,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 13 · 四. CATEGORY HEADER
+     SLIDE 14 · 四. CATEGORY HEADER
 ══════════════════════════════════ -->
 <section class="slide slide-unit bg-u1">
   <div class="unit-bg-num">四</div>
@@ -906,7 +921,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 13 · 人因 INTRO
+     SLIDE 14 · 人因 INTRO
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u1);"></div>
@@ -938,7 +953,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 14 · 久坐
+     SLIDE 15 · 久坐
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u1);"></div>
@@ -993,7 +1008,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 15 · 腕隧道 & 螢幕
+     SLIDE 16 · 腕隧道 & 螢幕
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u1);"></div>
@@ -1054,7 +1069,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 16 · 搬運 & 重複
+     SLIDE 17 · 搬運 & 重複
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u1);"></div>
@@ -1113,7 +1128,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 17 · 不法 — 法規 & 類型
+     SLIDE 18 · 不法 — 法規 & 類型
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u2);"></div>
@@ -1156,7 +1171,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 18 · 霸凌
+     SLIDE 19 · 霸凌
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u2);"></div>
@@ -1186,7 +1201,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 19 · 性騷擾
+     SLIDE 20 · 性騷擾
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u2);"></div>
@@ -1224,9 +1239,9 @@ tr:nth-child(even) td { background: #f9fafb; }
     </div>
     <div class="cols">
       <div>
-        <h3>申訴管道（由內而外）</h3>
+        <h3>申訴管道(內部)</h3>
         <div style="text-align:center;">
-          <img src="img/18申訴流程橫式.png" alt="申訴管道流程" style="max-width:100%; max-height:35rem; object-fit:contain; border-radius:0.4rem;">
+          <img src="img/20內部申訴.png" alt="申訴管道流程" style="max-width:100%; max-height:35rem; object-fit:contain; border-radius:0.4rem;">
         </div>
       </div>
       <div>
@@ -1243,7 +1258,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 20 · 法律責任 & 熱線
+     SLIDE 21 · 法律責任 & 熱線
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u2);"></div>
@@ -1296,7 +1311,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 21 · 感電的危險性
+     SLIDE 22 · 感電的危險性
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u4);"></div>
@@ -1330,7 +1345,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 22 · 下班清單 & 延長線
+     SLIDE 23 · 下班清單 & 延長線
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u4);"></div>
@@ -1366,7 +1381,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 23 · 潮濕 & 異常
+     SLIDE 24 · 潮濕 & 異常
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u4);"></div>
@@ -1416,7 +1431,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 24 · 五. CATEGORY HEADER
+     SLIDE 25 · 五. CATEGORY HEADER
 ══════════════════════════════════ -->
 <section class="slide slide-unit bg-u3">
   <div class="unit-bg-num">五</div>
@@ -1426,7 +1441,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 25 · 通報流程
+     SLIDE 26 · 通報流程
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u3);"></div>
@@ -1466,7 +1481,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 26 · 地震 SOP
+     SLIDE 27 · 地震 SOP
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u3);"></div>
@@ -1523,7 +1538,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 27 · 逃生 & 急救
+     SLIDE 28 · 逃生 & 急救
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u3);"></div>
@@ -1565,7 +1580,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 28 · 六. CATEGORY HEADER
+     SLIDE 29 · 六. CATEGORY HEADER
 ══════════════════════════════════ -->
 <section class="slide slide-unit bg-u6">
   <div class="unit-bg-num">六</div>
@@ -1575,7 +1590,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 29 · 防禦駕駛
+     SLIDE 30 · 防禦駕駛
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u6);"></div>
@@ -1604,7 +1619,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 30 · 天氣 & 疲勞
+     SLIDE 31 · 天氣 & 疲勞
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u6);"></div>
@@ -1649,7 +1664,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 31 · 分心 & 機車 & 行人
+     SLIDE 32 · 分心 & 機車 & 行人
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u6);"></div>
@@ -1701,7 +1716,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 32 · 運動 & 飲食
+     SLIDE 33 · 運動 & 飲食
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u7);"></div>
@@ -1748,7 +1763,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 33 · 睡眠 & 壓力
+     SLIDE 34 · 睡眠 & 壓力
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u7);"></div>
@@ -1803,7 +1818,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 34 · Burnout & 壓力技巧
+     SLIDE 35 · Burnout & 壓力技巧
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u7);"></div>
@@ -1856,7 +1871,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 35 · 健康資源
+     SLIDE 36 · 健康資源
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u7);"></div>
@@ -1884,7 +1899,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 36 · 職業病 & 化學品（第六章）
+     SLIDE 37 · 職業病 & 化學品（第六章）
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u6);"></div>
@@ -1924,7 +1939,7 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 37 · 夏日熱傷害預防（第六章）
+     SLIDE 38 · 夏日熱傷害預防（第六章）
 ══════════════════════════════════ -->
 <section class="slide slide-content">
   <div class="accent" style="background:var(--u6);"></div>
@@ -1960,29 +1975,13 @@ tr:nth-child(even) td { background: #f9fafb; }
 </section>
 
 <!-- ══════════════════════════════════
-     SLIDE 38 · SUPPLEMENT HEADER
+     SLIDE 39 · SUPPLEMENT HEADER
 ══════════════════════════════════ -->
 <section class="slide slide-unit bg-us">
   <div class="unit-bg-num" style="font-size:8rem;">＋</div>
   <div class="unit-eyebrow">SUPPLEMENTARY TOPICS</div>
   <div class="unit-heading">補充主題</div>
   <div class="unit-time-badge">訪客管理・資訊安全</div>
-</section>
-
-<!-- ══════════════════════════════════
-     SLIDE 39 · 補充 職災統計
-══════════════════════════════════ -->
-<section class="slide slide-content">
-  <div class="accent" style="background:var(--us);"></div>
-  <div class="slide-header">
-    <span class="unit-badge" style="background:var(--us);">補充</span>
-    <h2>職災統計</h2>
-  </div>
-  <div class="slide-body" style="justify-content:center; align-items:center;">
-    <div style="text-align:center;">
-      <img src="img/31職災統計.png" alt="職災統計" style="max-width:100%; max-height:32rem; object-fit:contain; border-radius:0.4rem;">
-    </div>
-  </div>
 </section>
 
 <!-- ══════════════════════════════════
